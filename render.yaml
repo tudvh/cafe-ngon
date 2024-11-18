@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: cafe-ngon
+    runtime: python3.10
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: LOGIN_USERNAME
+        sync: false
+      - key: LOGIN_PASSWORD
+        sync: false
+      - key: INSTAGRAM_USERNAMES
+        sync: false

@@ -1,0 +1,12 @@
+{
+  "python.defaultInterpreterPath": ".\\env\\Scripts\\python.exe",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "args": ["-NoExit", "-Command", "& { . './env/Scripts/Activate.ps1' }"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "python.terminal.activateEnvironment": true
+}
